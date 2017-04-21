@@ -1,0 +1,20 @@
+# Jekyll config Page
+# Main Page
+title: Felipe Desiglo Ferrare
+#email: your-email@domain.com
+description: > # this means to ignore newlines until "baseurl:"
+  Felipe Desiglo Ferrare - Software Developer, CTAL-(TA/TM), CTFL-AT, ITIL, PSM I
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://felipe84841.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+github_username:  felipe84841
+linkedin_username: felipedesigloferrare
+google_analytics: UA-97857864-1
+
+# Build settings
+markdown: kramdown
+theme: minima
+gems:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock
