@@ -1,6 +1,6 @@
- <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}">
+ <a href="https://www.linkedin.com/in/{{ site.linkedin_username[page.lang] }}">
     <span class="icon">
 		{% include icon-linkedin.svg %}
     </span>
-    <span class="username">{{ site.linkedin_username }}</span>
+    <span class="username">{{ site.linkedin_username["name"] }}</span>
   </a>

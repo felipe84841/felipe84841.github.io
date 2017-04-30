@@ -3,6 +3,7 @@
   <div class="wrapper">
     {% assign default_paths = site.pages | map: "path" %}
     {% assign page_paths = site.header_pages | default: default_paths %}
+	{% assign pages_Lang = default_paths | where:"lang", page.lang %}
     <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
   
     {% if page_paths %}
@@ -32,3 +33,21 @@
     {% endif %}
   </div>
 </header>
+
+
+
+<div class="wrapper" style="text-align: right; line-height: 2em; word-spacing: 10px;">
+  {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
+  {% for post in posts %} 
+  <a href="{{ post.url | prepend: site.baseurl }}" class="{{ post.lang }}">
+  {% include FlagIcon.html %}
+  {{ post.lang }}
+  </a> {% endfor %}
+
+  {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+  {% for page in pages %} 
+  <a href="{{ page.url | prepend: site.baseurl }}" class="{{ page.lang }}">
+  {% include FlagIcon.html %}
+  {{ page.lang }}
+  </a> {% endfor %}
+</div>
