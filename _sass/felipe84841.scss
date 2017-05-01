@@ -1,10 +1,10 @@
 /*
-Main screen
+AboutMe screen
 */
 
 .meImg {
 	width:200px;
-	height:200px;	
+	height:200px;
 	border-radius: 50%;
 }
 
@@ -29,8 +29,17 @@ $ImgPosition: 20%;
 	
 	.meImg {
 		position: absolute;
-		top: $ImgPosition;                         
+		top: $ImgPosition;
 		transform: translate(0, $ImgPosition) 
-    }
+	}
 
 }
+
+/*
+Lang Config
+*/
+.en:lang(en), .pt-br:lang(pt-br){
+	font-weight: bold;
+	color: black;
+}
+
