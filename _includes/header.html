@@ -36,7 +36,7 @@
 
 
 
-<div class="wrapper" style="text-align: right; line-height: 2em; word-spacing: 10px;">
+<div class="wrapper" style="text-align: right; line-height: 2em; word-spacing: 5px;">
   {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
   {% for post in posts %} 
   <a href="{{ post.url | prepend: site.baseurl }}" class="{{ post.lang }}">
@@ -49,5 +49,5 @@
   <a href="{{ page.url | prepend: site.baseurl }}" class="{{ page.lang }}">
   {% include FlagIcon.html %}
   {{ page.lang }}
-  </a> {% endfor %}
+  </a> &nbsp  {% endfor %}
 </div>
