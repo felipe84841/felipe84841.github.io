@@ -33,6 +33,19 @@
 			{% include icon-linkedin.html %}
 		</li>
 		{% endif %}
+		
+	   {% if site.orcid_ID %}
+		<li>
+			{% include icon-orcid.html %}
+		</li>
+		{% endif %}
+		
+		
+		{% if site.lattes_CV %}
+		<li>
+			{% include icon-lattes.html %}
+		</li>
+		{% endif %}
 
         </ul>
       </div>

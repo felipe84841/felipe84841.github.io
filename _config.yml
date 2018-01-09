@@ -9,6 +9,8 @@ Contry: BR
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://felipe84841.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  felipe84841
+orcid_ID: 0000-0003-3896-8650
+lattes_CV: 6035797505367483
 linkedin_username:
     name: felipedesigloferrare
     pt-br: felipedesigloferrare
